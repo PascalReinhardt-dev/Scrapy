@@ -9,6 +9,5 @@ class quotesSpider(scrapy.Spider):
 
     def parse(self, response):
         yield{
-        	'stocks_value': response.css('span.UP::text').extract_first(),
-        	'stocks_value': response.css('span.DOWN::text').extract_first(),
+        	'stocks_value': response.css('div.KURSDATEN_CONTAINER.span').extract_first(),
         }
