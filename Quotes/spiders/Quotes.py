@@ -1,7 +1,7 @@
 import scrapy
 
 
- class Quotes(scrapy.Spider):
+class Quotes(scrapy.Spider):
  	name = "Quotes"
  	allowed_domains = ["toscrape.com"]
     start_urls = [
