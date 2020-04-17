@@ -1,8 +1,8 @@
 import scrapy
 
 
- class FirstSpider(scrapy.Spider):
- 	name = "Manfred"
+ class Quotes(scrapy.Spider):
+ 	name = "Quotes"
  	allowed_domains = ["toscrape.com"]
     start_urls = [
         'http://quotes.toscrape.com/',
